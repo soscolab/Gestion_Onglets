@@ -56,15 +56,15 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 titre = mContext.getString(R.string.titre_section0).toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_account_circle_24);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flare_24);
                 break;
             case 1:
                 titre = mContext.getString(R.string.titre_section1).toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_account_circle_24);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_filter_vintage_24);
                 break;
             case 2:
                 titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_account_circle_24);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
                 break;
         }
         SpannableString sb = new SpannableString(" " + titre);
