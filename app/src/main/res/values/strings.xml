@@ -5,4 +5,7 @@
     <string name="action_settings">action_settings</string>
     <string name="action_settings1">action_settings1</string>
     <string name="action_settings2">action_settings2</string>
+    <string name="titre_section0">Minéraux</string>
+    <string name="titre_section1">Végétaux</string>
+    <string name="titre_section2">Animaux</string>
 </resources>
