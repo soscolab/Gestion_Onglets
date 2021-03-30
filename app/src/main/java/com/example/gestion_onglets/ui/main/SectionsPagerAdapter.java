@@ -56,15 +56,15 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 titre = mContext.getString(R.string.titre_section0).toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.min);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_account_circle_24);
                 break;
             case 1:
                 titre = mContext.getString(R.string.titre_section1).toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.veg);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_account_circle_24);
                 break;
             case 2:
                 titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.anim);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_account_circle_24);
                 break;
         }
         SpannableString sb = new SpannableString(" " + titre);
@@ -81,6 +81,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 2;
+        return 3;
     }
 }
