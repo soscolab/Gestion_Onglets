@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ImageSpan;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -37,11 +38,15 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // Return a PlaceholderFragment (defined as a static inner class below).
         switch (position) {
             case 0:
-                return NatureFragment.newInstance(0, mContext.getString(R.string.titre_section0));
+                return NatureFragment.newInstance(0, mContext.getString(R.string.titre_section0),R.drawable.anim);
             case 1:
-                return NatureFragment.newInstance(1, mContext.getString(R.string.titre_section1));
+                return NatureFragment.newInstance(1, mContext.getString(R.string.titre_section1),R.drawable.min);
             case 2:
-                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2));
+                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
+            case 3:
+                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
+            case 4:
+                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
         }
         return null;
 
@@ -73,7 +78,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         icone.setBounds(0, 0, icone.getIntrinsicWidth(), icone.getIntrinsicHeight());
         ImageSpan span = new ImageSpan(icone, ImageSpan.ALIGN_BASELINE);
         sb.setSpan(span, 0, 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-
         return sb;
 
     }
