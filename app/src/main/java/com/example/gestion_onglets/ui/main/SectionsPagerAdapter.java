@@ -38,18 +38,17 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // Return a PlaceholderFragment (defined as a static inner class below).
         switch (position) {
             case 0:
-                return NatureFragment.newInstance(0, mContext.getString(R.string.titre_section0),R.drawable.min);
-
+                return SeasonsFragment.newInstance(0,mContext.getString(R.string.titre_section2),R.drawable.min,R.drawable.min,R.drawable.min,R.drawable.min);
             case 1:
                 return NatureFragment.newInstance(1, mContext.getString(R.string.titre_section1),R.drawable.min);
             case 2:
                 return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
             case 3:
                 return NatureFragment.newInstance(3, mContext.getString(R.string.titre_section2),R.drawable.veg);
-
+            case 4:
+                return NatureFragment.newInstance(4, mContext.getString(R.string.titre_section2),R.drawable.veg);
         }
         return null;
-
     }
 
     @Nullable
@@ -60,22 +59,23 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         Drawable icone=null;
         switch (position) {
             case 0:
-                titre = mContext.getString(R.string.titre_section0).toUpperCase(l);
+                titre = "Seasons".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flare_24);
                 break;
             case 1:
-                titre = mContext.getString(R.string.titre_section1).toUpperCase(l);
+                titre = "Seasons".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_filter_vintage_24);
                 break;
             case 2:
-                titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
+                titre = "Seasons".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
             case 3:
-                titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
+                titre = "Seasons".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
             case 4:
-                titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
+                titre = "Seasons".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
+
             break;
         }
         SpannableString sb = new SpannableString(" " + titre);
