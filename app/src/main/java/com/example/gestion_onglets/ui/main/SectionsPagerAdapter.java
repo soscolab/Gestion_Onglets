@@ -38,15 +38,15 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // Return a PlaceholderFragment (defined as a static inner class below).
         switch (position) {
             case 0:
-                return SeasonsFragment.newInstance(0,mContext.getString(R.string.titre_section2),R.drawable.min,R.drawable.min,R.drawable.min,R.drawable.min);
+                return SeasonsFragment.newInstance(0,"Seasons",R.drawable.winter,R.drawable.s,R.drawable.s1,R.drawable.a);
             case 1:
-                return NatureFragment.newInstance(1, mContext.getString(R.string.titre_section1),R.drawable.min);
+                return NatureFragment.newInstance(1, "Winter",R.drawable.winter);
             case 2:
-                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
+                return NatureFragment.newInstance(2, "Spring",R.drawable.s);
             case 3:
-                return NatureFragment.newInstance(3, mContext.getString(R.string.titre_section2),R.drawable.veg);
+                return NatureFragment.newInstance(3,"Summer",R.drawable.s1);
             case 4:
-                return NatureFragment.newInstance(4, mContext.getString(R.string.titre_section2),R.drawable.veg);
+                return NatureFragment.newInstance(4, "Autumn",R.drawable.a);
         }
         return null;
     }
@@ -63,17 +63,17 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flare_24);
                 break;
             case 1:
-                titre = "Seasons".toUpperCase(l);
+                titre = "Winter".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_filter_vintage_24);
                 break;
             case 2:
-                titre = "Seasons".toUpperCase(l);
+                titre = "Spring".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
             case 3:
-                titre = "Seasons".toUpperCase(l);
+                titre = "Summer".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
             case 4:
-                titre = "Seasons".toUpperCase(l);
+                titre = "Autumn".toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
 
             break;
