@@ -45,8 +45,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
             case 3:
                 return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
-            case 4:
-                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
+
+
         }
         return null;
 
@@ -70,7 +70,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
-                break;
+            case 3:
+                titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
+            break;
         }
         SpannableString sb = new SpannableString(" " + titre);
 // un espace est ajouté pour séparer le texte de l'image
@@ -85,6 +88,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 3;
+        return 4;
     }
 }
