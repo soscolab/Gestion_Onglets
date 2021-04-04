@@ -38,14 +38,14 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // Return a PlaceholderFragment (defined as a static inner class below).
         switch (position) {
             case 0:
-                return NatureFragment.newInstance(0, mContext.getString(R.string.titre_section0),R.drawable.anim);
+                return NatureFragment.newInstance(0, mContext.getString(R.string.titre_section0),R.drawable.min);
+
             case 1:
                 return NatureFragment.newInstance(1, mContext.getString(R.string.titre_section1),R.drawable.min);
             case 2:
                 return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
             case 3:
-                return NatureFragment.newInstance(2, mContext.getString(R.string.titre_section2),R.drawable.veg);
-
+                return NatureFragment.newInstance(3, mContext.getString(R.string.titre_section2),R.drawable.veg);
 
         }
         return null;
@@ -73,10 +73,13 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 3:
                 titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
                 icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
+            case 4:
+                titre = mContext.getString(R.string.titre_section2).toUpperCase(l);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
             break;
         }
         SpannableString sb = new SpannableString(" " + titre);
-// un espace est ajouté pour séparer le texte de l'image
+        // un espace est ajouté pour séparer le texte de l'image
 
         icone.setBounds(0, 0, icone.getIntrinsicWidth(), icone.getIntrinsicHeight());
         ImageSpan span = new ImageSpan(icone, ImageSpan.ALIGN_BASELINE);
@@ -88,6 +91,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 4;
+        return 5;
     }
 }

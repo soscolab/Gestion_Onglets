@@ -58,6 +58,7 @@ public class NatureFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
         ImageView imageview = (ImageView) view.findViewById(R.id.imageView);
         imageview.setImageResource(image);
+
         TextView tvLabel = (TextView) view.findViewById(R.id.section_label);
         tvLabel.setText(page + " -- " + title);
 

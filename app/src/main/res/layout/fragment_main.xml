@@ -22,8 +22,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="16pt"
+        android:layout_height="16pt"
         tools:ignore="MissingConstraints" />
 
 
