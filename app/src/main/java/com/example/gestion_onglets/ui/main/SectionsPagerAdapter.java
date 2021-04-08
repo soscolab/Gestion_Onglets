@@ -64,17 +64,19 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 break;
             case 1:
                 titre = "Winter".toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_filter_vintage_24);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flare_24);
                 break;
             case 2:
                 titre = "Spring".toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flare_24);
+                break;
             case 3:
                 titre = "Summer".toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flare_24);
+                break;
             case 4:
                 titre = "Autumn".toUpperCase(l);
-                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flight_24);
+                icone = mContext.getResources().getDrawable(R.drawable.ic_baseline_flare_24);
 
             break;
         }

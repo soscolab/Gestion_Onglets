@@ -42,7 +42,7 @@ public class NatureFragment extends Fragment {
         return fragment;
     }
 
-    // retrouver les valeurs des champs à partir du bundle
+    // Retrouver les valeurs des champs à partir du bundle
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
