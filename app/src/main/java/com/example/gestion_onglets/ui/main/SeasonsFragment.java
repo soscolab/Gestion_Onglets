@@ -7,7 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.example.gestion_onglets.MainActivity;
 import com.example.gestion_onglets.R;
 
 /**
@@ -71,6 +74,44 @@ public class SeasonsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_seasons, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_seasons, container, false);
+        ImageView imageview = (ImageView) view.findViewById(R.id.season1);
+        ImageView imageview1 = (ImageView) view.findViewById(R.id.season2);
+        ImageView imageview3 = (ImageView) view.findViewById(R.id.season3);
+        ImageView imageview4 = (ImageView) view.findViewById(R.id.season4);
+
+        imageview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             MainActivity activity = (MainActivity) getActivity();
+             activity.viewPager.setCurrentItem(1);
+            }
+        });
+
+        imageview1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity activity = (MainActivity) getActivity();
+                activity.viewPager.setCurrentItem(2);
+            }
+        });
+
+        imageview3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity activity = (MainActivity) getActivity();
+                activity.viewPager.setCurrentItem(3);
+            }
+        });
+
+        imageview4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity activity = (MainActivity) getActivity();
+                activity.viewPager.setCurrentItem(4);
+            }
+        });
+        return view;
     }
 }

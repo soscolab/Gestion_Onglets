@@ -19,22 +19,26 @@
             android:text="@string/hello_blank_fragment" />
 
         <ImageView
+            android:id="@+id/season1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/winter"
             />
         <ImageView
+            android:id="@+id/season2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/s"
             />
 
         <ImageView
+            android:id="@+id/season3"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/s1"
             />
         <ImageView
+            android:id="@+id/season4"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/a"

@@ -23,7 +23,7 @@ import androidx.appcompat.widget.Toolbar;
 import com.example.gestion_onglets.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
-
+    public ViewPager viewPager;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //declarer image pour chaque saison
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        ViewPager viewPager = findViewById(R.id.view_pager);
+         viewPager = findViewById(R.id.view_pager);
+
         viewPager.setAdapter(sectionsPagerAdapter);       // TabLayout tabs = findViewById(R.id.tabs);
       //  tabs.setupWithViewPager(viewPager);
 
